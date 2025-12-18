@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trío Delicia Real - Alimentación Consciente</title>
+    <title>Kit Adara Nutri - Alimentación Consciente</title>
     
-    <meta property="og:title" content="Trío Delicia Real🎁">
+    <meta property="og:title" content="Kit Adara Nutri🎁">
     
-    <meta property="og:description" content="Nutrición Consciente para toda la familia">
+    <meta property="og:description" content="Nutrición Consciente para toda la familia. 3 Frascos de Real Food + 2 BONUS Digitales.">
     
     <meta property="og:image" content="https://lauherrera-co.github.io/triodeliciareal/images/portada.jpg">
     
     <meta property="og:type" content="https://lauherrera-co.github.io/triodeliciareal/">
     
     <meta property="og:url" content="https://https://lauherrera-co.github.io/triodeliciareal/">
-    
     <style>
         * {
             margin: 0;
@@ -26,117 +25,162 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #2c3e50;
+            background: #fff;
+        }
+        
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            border-radius: 50px;
+            padding: 18px 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .whatsapp-float:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+        }
+        
+        .whatsapp-float::before {
+            content: "💬";
+            font-size: 1.3em;
         }
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #f8e9d8 0%, #f5d5b8 100%);
-            padding: 80px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f8f6f3 0%, #fff 100%);
+            padding: 40px 20px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" fill="none"/><circle cx="30" cy="30" r="1.5" fill="%23d4a574" opacity="0.2"/></svg>');
-            opacity: 0.3;
         }
         
         .hero-content {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            position: relative;
-            z-index: 1;
         }
         
         .hero h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             color: #8B4513;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-weight: 700;
+            letter-spacing: -1px;
         }
         
-        .hero-subtitle {
-            font-size: 1.4em;
+        .hero-tagline {
+            font-size: 1.5em;
             color: #6b5344;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            font-weight: 300;
         }
         
-        /* IMÁGENES RESPONSIVE - Código clave */
-        .hero-img {
-            max-width: 600px;  /* Tamaño máximo en desktop */
-            width: 100%;       /* Se adapta al contenedor */
-            margin: 0px;
-            border-radius: 35px;
+        .hero-benefits {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
         }
         
-        .hero-img img {
-            width: 100%;       /* Siempre ocupa el 100% del contenedor */
-            height: auto;      /* Mantiene la proporción original */
-            display: block;    /* Elimina espacio extra debajo */
-            object-fit: cover;
-            border-radius: 30px/* Recorta la imagen si es necesario */
+        .benefit-pill {
+            background: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            font-size: 1.1em;
+            color: #8B4513;
+            font-weight: 600;
+        }
+        
+        .hero-image {
+            max-width: 600px;
+            margin: 50px auto 40px;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(139, 69, 19, 0.15);
         }
         
         .cta-primary {
             display: inline-block;
             background: #8B4513;
             color: white;
-            padding: 18px 50px;
+            padding: 20px 60px;
             text-decoration: none;
             border-radius: 50px;
-            font-size: 1.2em;
+            font-size: 1.3em;
             font-weight: 600;
             transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+            box-shadow: 0 6px 20px rgba(139, 69, 19, 0.3);
+            margin-top: 20px;
         }
         
         .cta-primary:hover {
             background: #6b3410;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+            box-shadow: 0 8px 25px rgba(139, 69, 19, 0.4);
         }
         
-        /* Trust Badges */
-        .trust-badges {
-            background: white;
-            padding: 40px 20px;
+        /* Trust Section */
+        .trust-section {
+            background: #8B4513;
+            color: white;
+            padding: 60px 20px;
             text-align: center;
         }
         
-        .badges-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
+        .trust-content {
             max-width: 1000px;
             margin: 0 auto;
         }
         
-        .badge {
+        .trust-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+        
+        .trust-item {
             padding: 20px;
         }
         
-        .badge-icon {
-            font-size: 2.5em;
+        .trust-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .trust-item h3 {
+            font-size: 1.3em;
             margin-bottom: 10px;
         }
         
-        .badge h3 {
-            font-size: 1.1em;
-            color: #8B4513;
-            margin-bottom: 5px;
-        }
-        
-        /* Problem/Solution Section */
-        .problem-solution {
-            background: linear-gradient(135deg, #f8e9d8 0%, #f5d5b8 100%);
-            padding: 80px 20px;
+        /* Products Overview */
+        .products-section {
+            padding: 100px 20px;
+            background: white;
         }
         
         .container {
@@ -146,136 +190,63 @@
         
         .section-title {
             text-align: center;
-            font-size: 2.5em;
+            font-size: 2.8em;
             color: #8B4513;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
         
-        .comparison {
+        .products-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .comparison-box {
-            padding: 40px;
-            border-radius: 15px;
-            text-align: center;
-        }
-        
-        .before {
-            background: #ffe0e0;
-            border: 3px solid #ff6b6b;
-        }
-        
-        .after {
-            background: #e0f5e0;
-            border: 3px solid #51cf66;
-        }
-        
-        .comparison-box h3 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-        }
-        
-        .comparison-box ul {
-            list-style: none;
-            text-align: left;
-        }
-        
-        .comparison-box li {
-            padding: 10px 0;
-            font-size: 1.1em;
-        }
-        
-        .before li::before {
-            content: "❌ ";
-            margin-right: 10px;
-        }
-        
-        .after li::before {
-            content: "✅ ";
-            margin-right: 10px;
-        }
-        
-        /* Products Section */
-        .products {
-            padding: 80px 20px;
-            background: white;
+            margin-bottom: 60px;
         }
         
         .product-card {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            margin-bottom: 80px;
-            align-items: center;
-        }
-        
-        .product-card:nth-child(even) {
-            direction: rtl;
-        }
-        
-        .product-card:nth-child(even) > * {
-            direction: ltr;
-        }
-        
-        .product-image {
+            background: #f9f6f3;
             border-radius: 20px;
-            align-content: center;
-            overflow: hidden;
-            /*box-shadow: 0 10px 40px rgba(0,0,0,0.1);*/
-            max-width: 100%;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s;
         }
         
-        .product-image img {
-            width: 100%;       /* Ocupa todo el ancho disponible */
-            height: auto;      /* Mantiene proporción */
-            display: block;
-            object-fit: cover; /* Ajusta la imagen sin distorsión */
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(139, 69, 19, 0.15);
         }
         
-        .product-info h2 {
-            font-size: 2.2em;
+        .product-card img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+        
+        .product-card h3 {
+            font-size: 1.6em;
             color: #8B4513;
             margin-bottom: 15px;
         }
         
-        .product-tagline {
-            font-size: 1.2em;
+        .product-card p {
             color: #6b5344;
-            font-style: italic;
-            margin-bottom: 25px;
+            line-height: 1.8;
+            margin-bottom: 15px;
         }
         
-        .benefits {
-            list-style: none;
-            margin: 25px 0;
-        }
-        
-        .benefits li {
-            padding: 12px 0;
-            font-size: 1.1em;
-            border-bottom: 1px solid #f0e6d8;
-        }
-        
-        .benefits li strong {
+        .variants-note {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            font-size: 0.95em;
             color: #8B4513;
         }
         
-        .myth-buster {
-            background: #fff9f0;
-            border-left: 4px solid #ff9800;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-        
-        .myth-buster h4 {
-            color: #ff9800;
-            margin-bottom: 10px;
-            font-size: 1.3em;
+        .variants-note strong {
+            display: block;
+            margin-bottom: 5px;
         }
         
         .age-badge {
@@ -286,26 +257,95 @@
             border-radius: 20px;
             font-size: 0.9em;
             font-weight: 600;
+            margin: 15px 0;
+        }
+        
+        .more-info-btn {
+            background: transparent;
+            border: 2px solid #8B4513;
+            color: #8B4513;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            transition: all 0.3s;
             margin-top: 15px;
         }
         
-        /* CTA Section */
-        .cta-section {
+        .more-info-btn:hover {
+            background: #8B4513;
+            color: white;
+        }
+        
+        /* Product Details Accordion */
+        .product-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            margin-top: 20px;
+        }
+        
+        .product-details.active {
+            max-height: 1500px;
+        }
+        
+        .product-details-content {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 15px;
+            text-align: left;
+            border: 2px solid #8B4513;
+        }
+        
+        .product-details-content h4 {
+            color: #8B4513;
+            margin: 20px 0 10px 0;
+            font-size: 1.2em;
+        }
+        
+        .product-details-content h4:first-child {
+            margin-top: 0;
+        }
+        
+        .product-details-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .product-details-content li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+            line-height: 1.7;
+        }
+        
+        .product-details-content li::before {
+            content: "✓";
+            color: #51cf66;
+            font-weight: bold;
+            position: absolute;
+            left: 5px;
+        }
+        
+        /* CTA Trio Section */
+        .cta-trio-section {
             background: linear-gradient(135deg, #8B4513 0%, #6b3410 100%);
             color: white;
-            padding: 80px 20px;
+            padding: 100px 20px;
             text-align: center;
         }
         
-        .cta-section h2 {
-            font-size: 2.8em;
+        .cta-trio-section h2 {
+            font-size: 3em;
             margin-bottom: 20px;
         }
         
-        .price {
+        .price-tag {
             font-size: 4em;
+            color: white;
             font-weight: 700;
-            margin: 30px 0;
+            margin: 30px 0 15px;
         }
         
         .price-subtext {
@@ -314,19 +354,34 @@
             margin-bottom: 40px;
         }
         
-        .bonus-list {
-            list-style: none;
-            max-width: 600px;
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 800px;
             margin: 40px auto;
-            text-align: left;
         }
         
-        .bonus-list li {
-            padding: 15px;
-            margin: 10px 0;
+        .bonus-item {
             background: rgba(255,255,255,0.1);
-            border-radius: 10px;
-            font-size: 1.1em;
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .bonus-item h4 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        
+        .launch-offer {
+            font-size: 1.5em;
+            margin: 30px 0;
+            background: rgba(255,255,255,0.15);
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 600;
         }
         
         .cta-secondary {
@@ -334,272 +389,195 @@
             color: #8B4513;
         }
         
-        .urgency {
-            margin-top: 30px;
-            font-size: 1.3em;
-            font-weight: 600;
-            animation: pulse 2s infinite;
+        /* Individual Products Section */
+        .individual-products {
+            padding: 100px 20px;
+            background: #f9f6f3;
         }
         
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
+        .individual-products h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #8B4513;
+            margin-bottom: 20px;
         }
         
-        /* Recipes Section */
-        .recipes-section {
-            background: linear-gradient(135deg, #f8e9d8 0%, #f5d5b8 100%);
-            padding: 80px 20px;
-        }
-        
-        .section-subtitle {
+        .individual-products .subtitle {
             text-align: center;
             font-size: 1.2em;
             color: #6b5344;
-            margin-top: -30px;
             margin-bottom: 50px;
-            font-style: italic;
         }
         
-        .recipes-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-        
-        .recipe-card {
+        .price-table {
+            max-width: 900px;
+            margin: 0 auto;
             background: white;
             border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
-            transition: all 0.3s ease;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
         }
         
-        .recipe-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(139, 69, 19, 0.2);
+        .price-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            padding: 25px 30px;
+            border-bottom: 1px solid #f0e6d8;
+            align-items: center;
+            transition: background 0.3s;
         }
         
-        .recipe-header {
+        .price-row:hover {
+            background: #f9f6f3;
+        }
+        
+        .price-row:last-child {
+            border-bottom: none;
+        }
+        
+        .price-row.header {
+            background: #8B4513;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
+        .price-row.header:hover {
+            background: #8B4513;
+        }
+        
+        .product-name {
+            font-weight: 600;
+            color: #8B4513;
+            font-size: 1.1em;
+        }
+        
+        .product-variants {
+            font-size: 0.9em;
+            color: #6b5344;
+            margin-top: 5px;
+        }
+        
+        .price-amount {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #8B4513;
+            text-align: right;
+        }
+        
+        .order-btn {
+            background: #8B4513;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .order-btn:hover {
+            background: #6b3410;
+            transform: scale(1.05);
+        }
+        
+        /* Collapsible Sections */
+        .collapsible-section {
+            background: white;
+            padding: 80px 20px;
+        }
+        
+        .collapsible-item {
+            max-width: 900px;
+            margin: 0 auto 20px;
+            background: #f9f6f3;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .collapsible-header {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f9f6f3;
+            transition: all 0.3s;
+        }
+        
+        .collapsible-header:hover {
+            background: #f0e6d8;
+        }
+        
+        .collapsible-header h3 {
+            font-size: 1.5em;
+            color: #8B4513;
             display: flex;
             align-items: center;
             gap: 15px;
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #f0e6d8;
         }
         
-        .recipe-icon {
-            font-size: 3em;
-        }
-        
-        .recipe-header h3 {
-            color: #8B4513;
+        .collapsible-icon {
             font-size: 1.5em;
-            line-height: 1.2;
+            transition: transform 0.3s;
         }
         
-        .recipe-content h4 {
-            color: #8B4513;
-            font-size: 1.1em;
-            margin: 20px 0 10px 0;
-            font-weight: 600;
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
         }
         
-        .recipe-content ul {
+        .collapsible-content.active {
+            max-height: 2000px;
+        }
+        
+        .collapsible-inner {
+            padding: 30px;
+            border-top: 2px solid #d4a574;
+            background: white;
+        }
+        
+        .collapsible-inner ul {
             list-style: none;
             padding-left: 0;
         }
         
-        .recipe-content li {
-            padding: 8px 0 8px 25px;
+        .collapsible-inner li {
+            padding: 12px 0 12px 30px;
             position: relative;
-            line-height: 1.6;
+            line-height: 1.8;
         }
         
-        .recipe-content li::before {
+        .collapsible-inner li::before {
             content: "•";
             color: #d4a574;
             font-size: 1.5em;
             position: absolute;
             left: 5px;
-            top: 2px;
+            top: 8px;
         }
         
-        .recipe-cta {
-            background: white;
-            border-radius: 25px;
-            padding: 50px 40px;
-            text-align: center;
-            box-shadow: 0 15px 50px rgba(139, 69, 19, 0.15);
+        .collapsible-inner h4 {
+            color: #8B4513;
+            margin: 20px 0 10px;
+            font-size: 1.2em;
         }
         
-        .recipe-bonus {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .bonus-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #6b3410 0%, #8B4513 100%);
             color: white;
-            padding: 10px 30px;
-            border-radius: 50px;
-            font-size: 1.1em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
-        }
-        
-        .recipe-bonus h3 {
-            color: #8B4513;
-            font-size: 2em;
-            margin-bottom: 30px;
-        }
-        
-        .bonus-items {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-        
-        .bonus-item {
-            background: #f9f4ef;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-        }
-        
-        .bonus-item span {
-            font-size: 3em;
-            display: block;
-            margin-bottom: 15px;
-        }
-        
-        .bonus-item p {
-            line-height: 1.6;
-            color: #2c3e50;
-        }
-        
-        .bonus-item strong {
-            color: #8B4513;
-            font-size: 1.2em;
-            display: block;
-            margin-bottom: 5px;
-        }
-        
-        /* FAQ Section */
-        .faq-section {
-            background: white;
             padding: 80px 20px;
-        }
-        
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto 60px;
-        }
-        
-        .faq-item {
-            background: #f9f4ef;
-            border-radius: 15px;
-            padding: 30px;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-        
-        .faq-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(139, 69, 19, 0.15);
-            border-color: #d4a574;
-        }
-        
-        .faq-question {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-        
-        .faq-icon {
-            font-size: 2em;
-            flex-shrink: 0;
-        }
-        
-        .faq-question h3 {
-            color: #8B4513;
-            font-size: 1.3em;
-            line-height: 1.3;
-        }
-        
-        .faq-answer {
-            padding-left: 55px;
-            color: #2c3e50;
-            line-height: 1.8;
-        }
-        
-        .faq-answer p {
-            margin-bottom: 10px;
-        }
-        
-        .faq-answer strong {
-            color: #8B4513;
-        }
-        
-        .faq-cta {
             text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #f8e9d8 0%, #f5d5b8 100%);
-            border-radius: 20px;
-            max-width: 600px;
-            margin: 0 auto;
         }
         
-        /* Personalization Note */
-        .personalization-note {
-            background: linear-gradient(135deg, #fff9f0 0%, #ffe8d0 100%);
-            padding: 40px 20px;
-            text-align: center;
-            border-top: 3px solid #d4a574;
-            border-bottom: 3px solid #d4a574;
-        }
-        
-        .personalization-note .container {
-            max-width: 800px;
-        }
-        
-        .personalization-note h3 {
-            font-size: 2em;
-            color: #8B4513;
-            margin-bottom: 20px;
-        }
-        
-        .personalization-note p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            color: #6b5344;
-        }
-        
-        .personalization-options {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .option-badge {
-            background: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(139, 69, 19, 0.2);
-            font-weight: 600;
-            color: #8B4513;
-            font-size: 1.1em;
+        .final-cta h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
         }
         
         /* Footer */
@@ -612,288 +590,245 @@
         
         /* Responsive */
         @media (max-width: 768px) {
-            .faq-grid {
-                grid-template-columns: 1fr;
+            .hero h1 {
+                font-size: 2.5em;
             }
             
-            .personalization-options {
-                flex-direction: column;
-                align-items: center;
+            .hero-tagline {
+                font-size: 1.2em;
             }
-            .hero h1 {
+            
+            .hero-benefits {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .benefit-pill {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+            
+            .price-tag {
+                font-size: 2.5em;
+            }
+            
+            .whatsapp-float {
+                padding: 15px 25px;
+                font-size: 1em;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .section-title {
                 font-size: 2em;
             }
             
-            .comparison,
-            .product-card {
+            .price-row {
                 grid-template-columns: 1fr;
+                gap: 15px;
+                text-align: center;
             }
             
-            .product-card:nth-child(even) {
-                direction: ltr;
+            .price-amount {
+                text-align: center;
             }
             
-            .price {
-                font-size: 2.5em;
+            .products-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send?phone=573180072696&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20Kit%20Adara%20Nutri" class="whatsapp-float" target="_blank">
+        Ordenar Ahora
+    </a>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>🎁 Trío Delicia Real</h1>
-            <p class="hero-subtitle">La inversión más valiosa: nutrición de verdad para tu familia</p>
+            <h1>Kit Adara Nutri</h1>
+            <p class="hero-tagline">Alimentación Consciente para toda tu Familia</p>
             
-            <!-- FOTO RECOMENDADA: JPH08075.jpg (los 3 frascos en bandeja) -->
-            <div>
-                <p>
-                    <img class="hero-img" src="images/portada.jpg">
-                    <br> <br>
-                </p>
+            <div class="hero-benefits">
+                <span class="benefit-pill">👶🏻 Desde los 6 meses</span>
+                <span class="benefit-pill">🚫 Sin azúcar ni conservantes</span>
+                <span class="benefit-pill">🌿 Real Food</span>
             </div>
             
-            <a href="https://api.whatsapp.com/send?phone=573180072696&text=*Yo%20quiero*%20%F0%9F%98%83" class="cta-primary">Quiero el Mío Ahora</a>
+            <div class="hero-image">
+                <img src="images/portada.jpg" alt="Trío Delicia Real - 3 Frascos Premium">
+            </div>
+            
+            <p style="font-size: 1.3em; color: #6b5344; margin-bottom: 20px;">
+                <strong>Comida de verdad</strong> que cuida a quienes más amas
+            </p>
+            
+            <a href="https://api.whatsapp.com/send?phone=573180072696&text=Quiero%20ordenar%20el%20Kit%20Adara%20%F0%9F%8E%81" class="cta-primary">Ordenar Kit Adara Nutri</a>
         </div>
     </section>
 
-    <!-- Trust Badges -->
-    <section class="trust-badges">
-        <div class="badges-grid">
-            <div class="badge">
-                <div class="badge-icon">🚫</div>
-                <h3>Sin Aditivos</h3>
-                <p>Cero conservantes artificiales</p>
-            </div>
-            <div class="badge">
-                <div class="badge-icon">🍰</div>
-                <h3>Sin Azúcar Añadida</h3>
-                <p>Dulzura natural, salud real</p>
-            </div>
-            <div class="badge">
-                <div class="badge-icon">👶🏻</div>
-                <h3>Desde los 6 Meses</h3>
-                <p>Alimentación complementaria</p>
-            </div>
-            <div class="badge">
-                <div class="badge-icon">🥗</div>
-                <h3>Real Food</h3>
-                <p>Comida de verdad, no procesados</p>
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="trust-content">
+            <h2>¿Por qué elegir Kit Adara Nutri?</h2>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">✅</div>
+                    <h3>Ingredientes Reales</h3>
+                    <p>Puedes leer y entender cada ingrediente</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">👶🏻</div>
+                    <h3>Para toda la familia</h3>
+                    <p>Desde bebés de 6 meses hasta adultos</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🌱</div>
+                    <h3>Nutrición de verdad</h3>
+                    <p>Densidad nutricional sin calorías vacías</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">💚</div>
+                    <h3>Sin culpa</h3>
+                    <p>Cero azúcar añadida, cero conservantes</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Problem/Solution -->
-    <section class="problem-solution">
+    <!-- Products Section -->
+    <section class="products-section">
         <div class="container">
-            <h2 class="section-title">¿Cansado de leer etiquetas incomprensibles?</h2>
+            <h2 class="section-title">¿Qué Incluye tu Kit?</h2>
             
-            <div class="comparison">
-                <div class="comparison-box before">
-                    <h3>❌ Lo que comprabas antes</h3>
-                    <ul>
-                        <li>Aceites vegetales inflamatorios</li>
-                        <li>Cremas con azúcar como primer ingrediente</li>
-                        <li>Aceite de palma refinado</li>
-                        <li>Granolas con calorías vacías</li>
-                        <li>Ingredientes que no entiendes</li>
-                    </ul>
+            <div class="products-grid">
+                <!-- Manteca de Cerdo -->
+                <div class="product-card">
+                    <img src="images/manteca.jpg" alt="Manteca de Cerdo Pura Artesanal">
+                    <h3>🥓 Manteca de Cerdo</h3>
+                    <p>Sabor neutro y grasas saludables para el cerebro. Alto punto de humo para cocinar sin toxinas.</p>
+                    <span class="age-badge">Desde 6 meses</span>
+                    <button class="more-info-btn" onclick="toggleProductDetails('manteca')">+ Más información</button>
+                    
+                    <div id="manteca-details" class="product-details">
+                        <div class="product-details-content">
+                            <h4>📋 Composición</h4>
+                            <p>100% Empella de cerdo artesanal (grasa visceral pura)</p>
+                            
+                            <h4>💪 Beneficios</h4>
+                            <ul>
+                                <li>Alto punto de humo (190°C) - No se oxida ni se vuelve tóxica</li>
+                                <li>Sabor neutro - No altera el sabor de tus preparaciones</li>
+                                <li>Grasas saludables para el desarrollo cerebral infantil</li>
+                                <li>Rica en ácido oleico (como el aceite de oliva)</li>
+                                <li>Keto friendly</li>
+                            </ul>
+                            
+                            <h4>🍳 Usos recomendados</h4>
+                            <ul>
+                                <li>Para cocinar: freír, saltear, hornear</li>
+                                <li>Papillas y purés para bebés (aumenta densidad calórica)</li>
+                                <li>Vegetales, huevos, arepas, empanadas</li>
+                            </ul>
+                            
+                            <h4>👶🏻 Edad recomendada</h4>
+                            <p>Desde los 6 meses (inicio de alimentación complementaria)</p>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="comparison-box after">
-                    <h3>✅ Lo que obtienes ahora</h3>
-                    <ul>
-                        <li>Grasas saludables y estables</li>
-                        <li>Solo 3 ingredientes reales</li>
-                        <li>Proteína + energía nutritiva</li>
-                        <li>Densidad nutricional máxima</li>
-                        <li>Ingredientes que puedes leer y entender</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products -->
-    <section class="products">
-        <div class="container">
-            <h2 class="section-title">Los 3 Aliados de tu Cocina Consciente</h2>
-            
-            <!-- Producto 1: Manteca de Cerdo -->
-            <div class="product-card">
-                <div class="product-image">
-                    <!-- FOTO RECOMENDADA: JPH08074.jpg -->
-                    <p>
-                        <img class="hero-img" src="images/manteca.jpg">
-                    </p>
-                </div>
-                <div class="product-info">
-                    <h2>🥓 Manteca de Cerdo Pura</h2>
-                    <p class="product-tagline">Lo que la industria no quiere que sepas</p>
+                <!-- Crema de Maní -->
+                <div class="product-card">
+                    <img src="images/crema_de_mani.jpg" alt="Crema de Maní Natural sin Azúcar">
+                    <h3>🥜 Crema de Maní</h3>
+                    <p>Energía cremosa sin azúcar. Proteína vegetal + grasas saludables para toda la familia.</p>
                     
-                    <ul class="benefits">
-                        <li><strong>🧠 Para el cerebro de tu bebé:</strong> Colesterol necesario para el desarrollo neuronal</li>
-                        <li><strong>💪 Perfil superior:</strong> Rica en ácido oleico (como el aceite de oliva)</li>
-                        <li><strong>🔥 Alto punto de humo:</strong> No se oxida ni se vuelve tóxica</li>
-                    </ul>
-                    
-                    <div class="myth-buster">
-                        <h4>💡 Desmintiendo el mito</h4>
-                        <p><strong>"La manteca sube el colesterol" = FALSO.</strong> Lo que inflama tu cuerpo son los aceites vegetales refinados. La manteca tiene más grasas saludables que saturadas.</p>
+                    <div class="variants-note">
+                        <strong>Elige tu presentación:</strong>
+                        🥜 Original • 🍫 Con cacao • 🍇 Con pasas
                     </div>
                     
-                    <span class="age-badge">✅ Desde los 6 meses</span>
-                </div>
-            </div>
-
-            <!-- Producto 2: Crema de Maní + Choco -->
-            <div class="product-card">
-                <div class="product-image">
-                    <!-- FOTO RECOMENDADA: JPH07944.jpg o JPH07969.jpg -->
-                    <p>
-                        <img class="hero-img" src="images/crema_de_mani.jpg">
-                    </p>
-                </div>
-                <div class="product-info">
-                    <h2>🥜 Crema de Maní + Choco</h2>
-                    <p class="product-tagline">El placer saludable sin culpa</p>
+                    <span class="age-badge">Original: 6m+ | Con cacao/pasas: 12m+</span>
+                    <button class="more-info-btn" onclick="toggleProductDetails('crema')">+ Más información</button>
                     
-                    <ul class="benefits">
-                        <li><strong>⚡ Energía sostenida:</strong> MCT del aceite de coco = combustible cerebral directo</li>
-                        <li><strong>💪 Proteína vegetal:</strong> Saciedad duradera y aminoácidos esenciales</li>
-                        <li><strong>😋 Satisface antojos:</strong> Dulzura del cacao sin azúcar refinada</li>
-                    </ul>
-                    
-                    <p style="background: #fff9f0; padding: 15px; border-radius: 8px; margin-top: 20px;">
-                        <strong>Úsala en:</strong> Pan integral, avena, yogur, como dip para frutas, o directo de la cuchara 😉
-                    </p>
-                    
-                    <span class="age-badge">✅ Sin cacao: desde 6 meses</span>
-                    <span class="age-badge">✅ Con cacao: desde 12 meses</span>
-                </div>
-            </div>
-
-            <!-- Producto 3: Mix de Semillas -->
-            <div class="product-card">
-                <div class="product-image">
-                    <!-- FOTO RECOMENDADA: JPH08006.jpg o JPH08051.jpg -->
-                    <p>
-                        <img class="hero-img" src="images/Mix_semillas.jpg">
-                    </p>
-                </div>
-                <div class="product-info">
-                    <h2>🌰 Mix de Semillas Molido</h2>
-                    <p class="product-tagline">El multivitamínico natural que faltaba</p>
-                    
-                    <ul class="benefits">
-                        <li><strong>💊 Bomba de minerales:</strong> Zinc, magnesio, calcio y hierro en cada cucharada</li>
-                        <li><strong>🌾 Fibra para el intestino:</strong> Mejora digestión y alimenta tu microbiota</li>
-                        <li><strong>👶 Aliado del BLW:</strong> "Apana" frutas resbalosas para tu bebé</li>
-                    </ul>
-                    
-                    <p style="background: #fff9f0; padding: 15px; border-radius: 8px; margin-top: 20px;">
-                        <strong>Truco mamá:</strong> ¿El aguacate se le resbala al bebé? Rebózalo con este mix. Problema resuelto.
-                    </p>
-                    <span class="age-badge">✅ Sin cacao: desde 6 meses</span>
-                    <span class="age-badge">✅ Con cacao: desde 12 meses</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <!-- Recipes/Usage Section -->
-    <section class="recipes-section">
-        <div class="container">
-            <h2 class="section-title">¿Cómo Usar Estos Productos en tu Cocina?</h2>
-            <p class="section-subtitle">Ideas prácticas para toda la familia • Desde bebés hasta adultos</p>
-            
-            <div class="recipes-grid">
-                <!-- Manteca de Cerdo -->
-                <div class="recipe-card">
-                    <div class="recipe-header">
-                        <span class="recipe-icon">🥓</span>
-                        <h3>Manteca de Cerdo Pura</h3>
-                    </div>
-                    <div class="recipe-content">
-                        <h4>Para Bebés:</h4>
-                        <ul>
-                            <li>Papillas y purés (aumenta densidad calórica)</li>
-                            <li>Vegetales al vapor con un toque de manteca</li>
-                            <li>Primera comida: huevo revuelto suavecito</li>
-                        </ul>
-                        <h4>Para Toda la Familia:</h4>
-                        <ul>
-                            <li>Huevos fritos con bordes crujientes 🍳</li>
-                            <li>Vegetales salteados (realza el sabor natural)</li>
-                            <li>Sofritos y guisos tradicionales</li>
-                            <li>Arepas, empanadas y horneados</li>
-                        </ul>
+                    <div id="crema-details" class="product-details">
+                        <div class="product-details-content">
+                            <h4>📋 Composición</h4>
+                            <ul>
+                                <li><strong>Original:</strong> Maní tostado + Aceite de coco</li>
+                                <li><strong>Con cacao:</strong> Maní + Aceite de coco + Cacao 100% natural</li>
+                                <li><strong>Con pasas:</strong> Maní + Aceite de coco + Pasas</li>
+                            </ul>
+                            
+                            <h4>💪 Beneficios</h4>
+                            <ul>
+                                <li>Energía sostenida - MCT del aceite de coco = combustible cerebral</li>
+                                <li>Proteína vegetal de calidad para crecimiento</li>
+                                <li>Sin azúcar añadida - Dulzura natural del cacao/pasas</li>
+                                <li>Grasas saludables que generan saciedad</li>
+                                <li>Apta para bebés y toda la familia</li>
+                            </ul>
+                            
+                            <h4>🍯 Usos recomendados</h4>
+                            <ul>
+                                <li>Untada en pan integral o tostadas</li>
+                                <li>Mezclada en avena, yogur o smoothies</li>
+                                <li>Como dip para frutas (manzana, banano, fresas)</li>
+                                <li>En pancakes o waffles caseros</li>
+                            </ul>
+                            
+                            <h4>👶🏻 Edad recomendada</h4>
+                            <ul>
+                                <li><strong>Original:</strong> Desde 6 meses (previa prueba de alergia)</li>
+                                <li><strong>Con cacao o pasas:</strong> Desde 12 meses</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Crema de Maní + Choco -->
-                <div class="recipe-card">
-                    <div class="recipe-header">
-                        <span class="recipe-icon">🥜</span>
-                        <h3>Crema de Maní</h3>
-                    </div>
-                    <div class="recipe-content">
-                        <h4>Para Bebés:</h4>
-                        <ul>
-                            <li>Untada en pancitos integrales</li>
-                            <li>Mezclada en avena o yogur natural</li>
-                            <li>Como dip para bastones de manzana</li>
-                        </ul>
-                        <h4>Para Toda la Familia:</h4>
-                        <ul>
-                            <li>Tostadas integrales para el desayuno 🍞</li>
-                            <li>Smoothies (le da cremosidad y proteína)</li>
-                            <li>Dip para frutas: banano, fresas, manzana</li>
-                            <li>Directamente de la cuchara (no juzgamos 😉)</li>
-                            <li>En pancakes o waffles caseros</li>
-                        </ul>
-                    </div>
-                </div>
-
+                
                 <!-- Mix de Semillas -->
-                <div class="recipe-card">
-                    <div class="recipe-header">
-                        <span class="recipe-icon">🌰</span>
-                        <h3>Mix de Semillas Molido</h3>
+                <div class="product-card">
+                    <img src="images/Mix_semillas.jpg" alt="Mix de Semillas Molido - Multivitamínico Natural">
+                    <h3>🌰 Mix de Semillas</h3>
+                    <p>Tu multivitamínico natural. Zinc, magnesio, calcio y hierro en cada cucharada.</p>
+                    
+                    <div class="variants-note">
+                        <strong>Elige tu presentación:</strong>
+                        🌰 Original • 🍫 Con cacao
                     </div>
-                    <div class="recipe-content">
-                        <h4>Para Bebés:</h4>
-                        <ul>
-                            <li><strong>Truco BLW:</strong> "Apana" frutas resbalosas (aguacate, mango)</li>
-                            <li>Mezclado en papillas para agregar nutrientes</li>
-                            <li>Espolvoreado en vegetales cocidos</li>
-                        </ul>
-                        <h4>Para Toda la Familia:</h4>
-                        <ul>
-                            <li>Avena o yogur del desayuno 🥣</li>
-                            <li>Ensaladas (topping crujiente)</li>
-                            <li>Smoothies y batidos</li>
-                            <li>Bowls de frutas o açaí</li>
-                            <li>Masa de pancakes o preparaciones horneadas</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="recipe-cta">
-                <div class="recipe-bonus">
-                    <span class="bonus-badge">🎁 BONUS</span>
-                    <h3>Al comprar tu Trío recibes:</h3>
-                    <div class="bonus-items">
-                        <div class="bonus-item">
-                            <span>📖</span>
-                            <p><strong>E-book Recetario Familiar</strong><br>20+ recetas para usar tus productos desde el día 1</p>
-                        </div>
-                        <div class="bonus-item">
-                            <span>👶</span>
-                            <p><strong>Guía de Alimentación Complementaria</strong><br>Cómo incorporar grasas saludables en el BLW</p>
+                    
+                    <span class="age-badge">Original: 6m+ | Con cacao: 12m+</span>
+                    <button class="more-info-btn" onclick="toggleProductDetails('mix')">+ Más información</button>
+                    
+                    <div id="mix-details" class="product-details">
+                        <div class="product-details-content">
+                            <h4>📋 Composición</h4>
+                            <p>Linaza • Chía • Calabaza • Girasol • Almendras • Ajonjolí (blanco y negro)</p>
+                            <p style="margin-top: 10px;"><strong>Presentación con cacao:</strong> Todo lo anterior + Cacao 100% natural</p>
+                            
+                            <h4>💪 Beneficios</h4>
+                            <ul>
+                                <li>Multivitamínico natural: Magnesio, hierro, zinc, calcio</li>
+                                <li>Fibra para el intestino - Alimenta tu microbiota</li>
+                                <li>Proteína vegetal en cada porción</li>
+                                <li>Mayor absorción que suplementos sintéticos</li>
+                                <li>Ideal para BLW (Baby Led Weaning)</li>
+                            </ul>
+                            
+                            <h4>🥣 Usos recomendados</h4>
+                            <ul>
+                                <li><strong>Para bebés:</strong> "Apana" frutas resbalosas (aguacate, mango), mezclado en papillas</li>
+                                <li><strong>Para todos:</strong> Avena, yogur, ensaladas, smoothies, bowls de frutas</li>
+                                <li>Como topping crujiente en cualquier preparación</li>
+                            </ul>
+                            
+                            <h4>👶🏻 Edad recomendada</h4>
+                            <ul>
+                                <li><strong>Original:</strong> Desde 6 meses</li>
+                                <li><strong>Con cacao:</strong> Desde 12 meses</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -901,118 +836,221 @@
         </div>
     </section>
 
-    <!-- CTA Final -->
-    <section class="cta-section" id="comprar">
+    <!-- CTA Trio Section -->
+    <section class="cta-trio-section">
         <div class="container">
-            <h2>🎁 Invierte en lo que Realmente Importa</h2>
-            <p style="font-size: 1.3em; margin: 20px 0;">El regalo perfecto para tu familia</p>
+            <h2>🎁 Kit Adara Nutri</h2>
+            <p style="font-size: 1.4em; margin: 20px 0;">Edición Limitada - El regalo perfecto para tu familia</p>
             
-            <div class="price">$60.000 COP</div>
-            <p class="price-subtext">3 Frascos de Vidrio • 170ml c/u • Caja Premium Kraft</p>
+            <div class="price-tag">$60.000</div>
+            <p class="price-subtext">3 Frascos de 170ml • Presentación Premium en presentación de regalo</p>
             
-            <ul class="bonus-list">
-                <li>✅ 3 Frascos de vidrio de 170ml</li>
-                <li>✅ Presentación premium en caja kraft</li>
-                <li>🎁 BONUS: E-book Recetario Familiar (Digital)</li>
-                <li>🎁 BONUS: Guía de Alimentación Complementaria (Digital)</li>
-            </ul>
+            <div class="bonus-grid">
+                <div class="bonus-item">
+                    <h4>📖 BONUS 1</h4>
+                    <p>E-book Recetario Familiar con 20+ recetas</p>
+                </div>
+                <div class="bonus-item">
+                    <h4>👶🏻 BONUS 2</h4>
+                    <p>Guía de Alimentación Complementaria con Grasas Saludables</p>
+                </div>
+            </div>
             
-            <a href="https://api.whatsapp.com/send?phone=573180072696&text=*Yo%20quiero*%20%F0%9F%98%83" class="cta-primary cta-secondary">Escribe "YO QUIERO" por WhatsApp</a>
+            <p class="launch-offer">🚀 Oferta de Lanzamiento</p>
             
-            <p class="urgency">⚠️ Solo 20 unidades disponibles en preventa</p>
+            <a href="https://api.whatsapp.com/send?phone=573180072696&text=Quiero%20ordenar%20el%20Kit%20Adara%20%F0%9F%8E%81" class="cta-primary cta-secondary">Ordenar Kit por WhatsApp</a>
             
             <p style="margin-top: 40px; font-size: 1.2em; font-style: italic;">
-                No vendemos comida. Vendemos salud.<br>
-                Una forma tangible de demostrar amor: alimentar bien a los tuyos.
+                Regala Salud, Energía y Sabor Real<br>
+                No vendemos comida procesada. Vendemos nutrición de verdad.
             </p>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section">
+    <!-- Individual Products Section -->
+    <section class="individual-products">
         <div class="container">
-            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <h2>¿Ya conoces nuestros productos?</h2>
+            <p class="subtitle">Compra presentaciones individuales tamaño alacena (255ml)</p>
             
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span class="faq-icon">❓</span>
-                        <h3>¿Puedo pedir los productos sin cacao?</h3>
+            <div class="price-table">
+                <div class="price-row header">
+                    <div>Producto</div>
+                    <div style="text-align: center;">Precio</div>
+                    <div style="text-align: right;">Acción</div>
+                </div>
+                
+                <div class="price-row">
+                    <div>
+                        <div class="product-name">🥓 Manteca de Cerdo</div>
+                        <div class="product-variants">255ml • Artesanal</div>
                     </div>
-                    <div class="faq-answer">
-                        <p><strong>¡Por supuesto!</strong> Si prefieres la <strong>Crema de Maní sin Choco</strong> (ideal para bebés desde 6 meses) o el <strong>Mix de Semillas sin Cacao</strong>, solo indícalo al hacer tu pedido por WhatsApp. Nos adaptamos a las necesidades de tu familia. 😊</p>
+                    <div style="text-align: center;" class="price-amount">$35.000</div>
+                    <div style="text-align: right;">
+                        <a href="https://api.whatsapp.com/send?phone=573180072696&text=Quiero%20ordenar%20Manteca%20de%20Cerdo%20255ml%20%F0%9F%A5%93" class="order-btn">Ordenar</a>
                     </div>
                 </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span class="faq-icon">👶</span>
-                        <h3>¿Desde qué edad pueden consumir los productos?</h3>
+                
+                <div class="price-row">
+                    <div>
+                        <div class="product-name">🥜 Crema de Maní</div>
+                        <div class="product-variants">255ml • Original, Con cacao o Con pasas</div>
                     </div>
-                    <div class="faq-answer">
-                        <p><strong>Manteca de Cerdo:</strong> Desde los 6 meses (inicio de alimentación complementaria)<br>
-                        <strong>Crema de Maní sin cacao:</strong> Desde los 6 meses (previa prueba de alergia)<br>
-                        <strong>Crema de Maní con cacao:</strong> Desde los 12 meses<br>
-                        <strong>Mix de Semillas:</strong> Desde los 6 meses (sin cacao) o 12 meses (con cacao)</p>
-                        <p style="margin-top: 10px; font-style: italic; color: #8B4513;">Siempre consulta con tu pediatra ante dudas.</p>
+                    <div style="text-align: center;" class="price-amount">$40.000</div>
+                    <div style="text-align: right;">
+                        <a href="https://api.whatsapp.com/send?phone=573180072696&text=Quiero%20ordenar%20Crema%20de%20Man%C3%AD%20255ml%20%F0%9F%A5%9C%20(especificar%20presentaci%C3%B3n)" class="order-btn">Ordenar</a>
                     </div>
                 </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span class="faq-icon">⏰</span>
-                        <h3>¿Cuánto tiempo duran los productos?</h3>
+                
+                <div class="price-row">
+                    <div>
+                        <div class="product-name">🌰 Mix de Semillas</div>
+                        <div class="product-variants">255ml • Original o Con cacao</div>
                     </div>
-                    <div class="faq-answer">
-                        <p>Al ser productos <strong>100% naturales sin conservantes</strong>, recomendamos:<br>
-                        • <strong>Manteca de Cerdo:</strong> Refrigerada hasta 6 meses<br>
-                        • <strong>Crema de Maní:</strong> 3-4 meses en lugar fresco y seco<br>
-                        • <strong>Mix de Semillas:</strong> 2-3 meses en recipiente hermético</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span class="faq-icon">🥜</span>
-                        <h3>Mi hijo tiene alergia al maní, ¿qué opciones tengo?</h3>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Puedes armar tu Trío con productos alternativos. Los otros dos productos (Manteca y Mix de Semillas) son seguros. Escríbenos y encontramos la mejor combinación para ti.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span class="faq-icon">📦</span>
-                        <h3>¿Cómo es el envío?</h3>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Realizamos entregas en <strong>Cali</strong>. Para otras ciudades, coordinamos envío nacional. Los detalles de entrega y costos se confirman por WhatsApp según tu ubicación.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span class="faq-icon">🎁</span>
-                        <h3>¿Puedo regalar el Trío Delicia Real?</h3>
-                    </div>
-                    <div class="faq-answer">
-                        <p><strong>¡Es el regalo perfecto!</strong> Viene en una presentación premium en caja kraft, ideal para baby showers, cumpleaños o simplemente para demostrar que te importa la salud de quien amas. Podemos incluir una tarjeta personalizada si lo deseas.</p>
+                    <div style="text-align: center;" class="price-amount">$25.000</div>
+                    <div style="text-align: right;">
+                        <a href="https://api.whatsapp.com/send?phone=573180072696&text=Quiero%20ordenar%20Mix%20de%20Semillas%20255ml%20%F0%9F%8C%B0%20(especificar%20presentaci%C3%B3n)" class="order-btn">Ordenar</a>
                     </div>
                 </div>
             </div>
+            
+            <p style="text-align: center; margin-top: 40px; font-size: 1.1em; color: #6b5344;">
+                📦 Envíos a todo el país • 🏠 Domicilios en Cali<br>
+                💳 Múltiples medios de pago disponibles
+            </p>
+        </div>
+    </section>
 
-            <div class="faq-cta">
-                <p style="font-size: 1.2em; margin-bottom: 20px;">¿Tienes otra pregunta?</p>
-                <a href="https://api.whatsapp.com/send?phone=573180072696&text=Tengo%20una%20pregunta%20sobre%20Tr%C3%ADo%20Delicia%20Real" class="cta-primary">Escríbenos por WhatsApp</a>
+    <!-- Collapsible Information -->
+    <section class="collapsible-section">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 40px;">Información Adicional</h2>
+            
+            <!-- ¿Cómo usarlos? -->
+            <div class="collapsible-item">
+                <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                    <h3><span>🍳</span> ¿Cómo usar estos productos?</h3>
+                    <span class="collapsible-icon">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="collapsible-inner">
+                        <h4>🥓 Manteca de Cerdo:</h4>
+                        <ul>
+                            <li><strong>Para bebés:</strong> Papillas, purés, vegetales al vapor</li>
+                            <li><strong>Para todos:</strong> Huevos fritos, vegetales salteados, sofritos, arepas, empanadas</li>
+                        </ul>
+                        
+                        <h4>🥜 Crema de Maní:</h4>
+                        <ul>
+                            <li><strong>Para bebés:</strong> Untada en pan integral, mezclada en avena, como dip para frutas</li>
+                            <li><strong>Para todos:</strong> Tostadas, smoothies, pancakes, directa de la cuchara 😉</li>
+                        </ul>
+                        
+                        <h4>🌰 Mix de Semillas:</h4>
+                        <ul>
+                            <li><strong>Para bebés (Truco BLW):</strong> "Apana" frutas resbalosas (aguacate, mango)</li>
+                            <li><strong>Para todos:</strong> Avena, yogur, ensaladas, smoothies, bowls de frutas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Preguntas Frecuentes -->
+            <div class="collapsible-item">
+                <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                    <h3><span>❓</span> Preguntas Frecuentes</h3>
+                    <span class="collapsible-icon">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="collapsible-inner">
+                        <h4>¿Mi bebé puede comer estos productos?</h4>
+                        <p><strong>¡Sí!</strong> La manteca y el mix de semillas (original) son aptos desde los 6 meses. La crema de maní original también desde los 6 meses (previa prueba de alergia). Las versiones con cacao o pasas desde los 12 meses.</p>
+                        
+                        <h4>¿Puedo personalizar las presentaciones?</h4>
+                        <p>Sí, puedes solicitar la crema de maní en sus 3 versiones (Original, Con cacao, Con pasas) y el mix de semillas en 2 versiones (Original, Con cacao). Solo indícalo al hacer tu pedido por WhatsApp.</p>
+                        
+                        <h4>¿Cuánto duran los productos?</h4>
+                        <ul>
+                            <li><strong>Manteca:</strong> Hasta 6 meses refrigerada</li>
+                            <li><strong>Crema de Maní:</strong> 3-4 meses en lugar fresco y seco</li>
+                            <li><strong>Mix de Semillas:</strong> 2-3 meses en recipiente hermético</li>
+                        </ul>
+                        
+                        <h4>¿Tienen certificaciones?</h4>
+                        <p>Nuestros productos son elaborados artesanalmente con ingredientes premium. Cumplen con estándares de calidad alimentaria y están libres de aditivos artificiales.</p>
+                        
+                        <h4>¿Hacen envíos?</h4>
+                        <p>Sí, realizamos entregas en <strong>Cali</strong>. Para otras ciudades, coordinamos envío nacional. Los costos se confirman por WhatsApp según tu ubicación.</p>
+                        
+                        <h4>¿Qué medios de pago aceptan?</h4>
+                        <p>Aceptamos transferencias bancarias (Bre-B, Bancolombia) y pago contraentrega en Cali.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>¿Listo para comenzar?</h2>
+            <p style="font-size: 1.3em; margin: 20px 0;">Transforma la alimentación de tu familia hoy</p>
+            
+            <a href="https://api.whatsapp.com/send?phone=573180072696&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20productos" class="cta-primary cta-secondary">Escríbenos por WhatsApp</a>
+            
+            <p style="margin-top: 40px; font-size: 1.1em; font-style: italic;">
+                Alimentación Consciente • Real Food • Amor en cada frasco
+            </p>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
-        <p>Trío Delicia Real</p>
-        <p>Alimentación Consciente • Real Food • Amor en cada frasco</p>
+        <p><strong>Kit Adara Nutri</strong></p>
+        <p>Alimentación Consciente para toda tu Familia</p>
+        <p style="margin-top: 21px; font-size: 0.9em; opacity: 0.8;">
+            📍 Cali, Colombia • 📱 WhatsApp: +57 318 007 2696<br>
+            💳 Bre-B: 1144 076 592 • Bancolombia: 807 2468 1445 (Ahorros)
+        </p>
     </footer>
+
+    <script>
+        function toggleProductDetails(productId) {
+            const details = document.getElementById(productId + '-details');
+            const allDetails = document.querySelectorAll('.product-details');
+            
+            // Close all other product details
+            allDetails.forEach(detail => {
+                if (detail.id !== productId + '-details') {
+                    detail.classList.remove('active');
+                }
+            });
+            
+            // Toggle current product details
+            details.classList.toggle('active');
+        }
+        
+        function toggleCollapsible(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.collapsible-icon');
+            
+            // Close all other collapsibles
+            document.querySelectorAll('.collapsible-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                    item.previousElementSibling.querySelector('.collapsible-icon').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current collapsible
+            content.classList.toggle('active');
+            
+            if (content.classList.contains('active')) {
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
 </body>
 </html>
